@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="icons/css/styles.min.css">
+</head>
+<body ng-app="myApp">
+
+<div layout="column" style="height: 100%;" ng-cloak>
+
+  <section layout="row" flex>
+
+    <md-sidenav
+        class="md-sidenav-left"
+        md-component-id="left"
+        md-is-locked-open="$mdMedia('gt-md')"
+        md-whiteframe="4">
+
+      <md-content class="header-nav" layout-padding>
+        <div class="header">
+	        <div class="photo-container">
+	        	<img src="images/photo.png" alt="">
+	        </div>
+	        <div class="name">Trevor Reyes</div>
+				</div>
+      </md-content>
+			
+			<md-content class="content-nav-project">
+				<md-list flex>
+					<md-list-item style="font-size: 24px; color: #b3bbcb; position: relative; width: 100%;">
+						Projects
+						<md-button style="height: 24px; width: 35px; margin-left: 163px; min-width: 0px; padding: 0px;">
+							<i class="icons8-plus" style="font-size: 36px; color: #fff;"></i>
+						</md-button>
+					</md-list-item>
+				</md-list>
+			</md-content>
+
+			<md-content class="header-nav" style="font-size: 30px;">
+				<md-list flex>
+					<md-list-item class="active" style="padding: 5px 30px 5px 35px; margin-right: 60px;">
+						<p>Private</p>
+						<span>0</span>
+					</md-list-item>
+					<md-list-item style="padding: 5px 30px 5px 35px; margin-right: 60px;">
+						<p>Decode</p>
+						<span>0</span>
+					</md-list-item>
+					<md-list-item style="padding: 5px 30px 5px 35px; margin-right: 60px;">
+						<p>Family</p>
+						<span>0</span>
+					</md-list-item>
+					<md-list-item style="padding: 5px 30px 5px 35px; margin-right: 60px;">
+						<p>Cookie</p>
+						<span>0</span>
+					</md-list-item>
+				</md-list>
+			</md-content>
+
+    </md-sidenav>
+
+ 		<md-content class="search-bar">
+			<md-input-container class="search-bar-input">
+        <label><i class="icons8-search" style="font-size: 36px; color: #b3bbcb; padding-left: 40px;"></i></label>
+      	<input type="text" style="width: 100%;">
+  		</md-input-container>
+			
+			<md-menu>
+					<md-button class="dropdown" ng-click="$mdOpenMenu()">	
+			    		<i class="icons8-more"></i>
+			    </md-button>
+			    <md-menu-content class="menu-content">
+			    	<md-menu-item>
+			    		<md-button>
+			    			Edit
+			    		</md-button>
+			    	</md-menu-item>
+
+			    	<md-menu-item>
+			    		<md-button class="md-warn">
+			    			Delete
+			    		</md-button>
+			    	</md-menu-item>
+			    </md-menu-content>
+		  </md-menu>
+
+			<md-content class="main" flex layout-padding>
+				<p>Today</p>					
+				<div class="project">
+						<div class="task">
+							<div class="done">
+								<div class="circle"></div>
+							</div>
+							<div class="description">awdawd</div>
+						</div>
+						<md-divider class="task-divider"></md-divider>
+						<div class="task">
+							<div class="done">
+								<div class="circle"></div>
+							</div>
+							<div class="description">awdawd</div>
+						</div>
+				</div>
+
+				<p>Today</p>					
+				<div class="project">
+						<div class="task">
+							<div class="done">
+								<div class="circle"></div>
+							</div>
+							<div class="description">awdawd</div>
+						</div>
+				</div>
+
+				<p>Today</p>					
+				<div class="project">
+						<div class="task">
+							<div class="done">
+								<div class="circle"></div>
+							</div>
+							<div class="description">awdawd</div>
+						</div>
+				</div>
+
+				<p>Today</p>					
+				<div class="project">
+						<div class="task">
+							<div class="done">
+								<div class="circle"></div>
+							</div>
+							<div class="description">awdawd</div>
+						</div>
+				</div>
+
+				<p>Today</p>					
+				<div class="project">
+						<div class="task">
+							<div class="done">
+								<div class="circle"></div>
+							</div>
+							<div class="description">awdawd</div>
+						</div>
+				</div>
+
+				<p>Today</p>					
+				<div class="project">
+						<div class="task">
+							<div class="done">
+								<div class="circle"></div>
+							</div>
+							<div class="description">awdawd</div>
+						</div>
+				</div>
+			</md-content>
+
+ 		</md-content>
+
+		
+
+  </section>
+
+
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+<!-- Angular Material Library -->
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+<!-- Your application bootstrap  -->
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
